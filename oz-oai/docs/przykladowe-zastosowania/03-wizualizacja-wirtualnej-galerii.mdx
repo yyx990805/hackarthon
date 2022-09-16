@@ -1,0 +1,48 @@
+---
+sidebar_position: 3
+---
+
+# Wizualizacja wirtualnej galerii
+
+Poniższy przykład demonstruje jak można wykorzystaj transformacje CSS 3D do stworzenia pokoju wyświetlającego co jakiś czas nowe prace.
+
+export const Layout = ({children, color}) => {
+  const [isSpreadsheet, setIsSpreadsheet] = React.useState(false)
+  return (<div style={{border: '1px solid black'}} className="flex border-solid border-2">
+    <div>navbar</div>
+    <div style={{display: 'flex'}}>
+      <div style={{minHeight: '400px', minWidth: '400px', backgroundColor: 'lightgrey'}}>[mapa]</div>
+      <div>
+        <ol>
+          <li>Wydarzenie 1</li>
+          <li>Wydarzenie 2</li>
+          <li>Wydarzenie 3</li>
+          <li>Wydarzenie 4</li>
+          <li>Wydarzenie 5</li>
+        </ol>
+      </div>
+    </div>
+  </div>)
+}
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="3d" label="3D" default>
+    <iframe src="/hackarthon/wiz3d.html" width="100%" height="900"/>
+  </TabItem>
+  <TabItem value="draft" label="layout draft">
+    <Layout/>
+  </TabItem>
+</Tabs>
+
+```jsx title="src/przykłady/MapaWydarzen.jsx"
+  // zobacz kod źródłowy...
+```
+
+:::tip Wskazówka
+
+`className` to nic innego, jak `class`, ale w notacji [JSX](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+
+:::

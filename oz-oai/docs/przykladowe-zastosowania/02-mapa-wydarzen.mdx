@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+---
+
+# Mapa wydarzeń
+
+Prosta aplikacja wyświetlająca wydarzenia w okolicy
+
+export const Layout = ({children, color}) => {
+  const [isSpreadsheet, setIsSpreadsheet] = React.useState(false)
+  return (<div style={{border: '1px solid black'}} className="flex border-solid border-2">
+    <div>navbar</div>
+    <div style={{display: 'flex'}}>
+      <div style={{minHeight: '400px', minWidth: '400px', backgroundColor: 'lightgrey'}}>[mapa]</div>
+      <div>
+        <ol>
+          <li>Wydarzenie 1</li>
+          <li>Wydarzenie 2</li>
+          <li>Wydarzenie 3</li>
+          <li>Wydarzenie 4</li>
+          <li>Wydarzenie 5</li>
+        </ol>
+      </div>
+    </div>
+  </div>)
+}
+
+<Layout/>
+
+```jsx title="src/przykłady/MapaWydarzen.jsx"
+  // zobacz kod źródłowy...
+```
+
+:::tip Wskazówka
+
+`className` to nic innego, jak `class`, ale w notacji [JSX](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+
+:::

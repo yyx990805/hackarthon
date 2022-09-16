@@ -1,0 +1,66 @@
+---
+sidebar_position: 2
+---
+
+# System inwentaryzacji zbiorów
+
+Aplikacja łączy w sobie arkusz kalkulacyjny, wczytywanie danych z API oraz wyświetlanie szczegółów po wybraniu.
+
+## Budowa
+
+Layout oparty na bibliotece tailwind flex.
+
+```js
+export const Layout = ({children, color}) => (
+  <div>
+    <div>menu</div>
+    <div>
+      <div>arkusz</div>
+      <div>items details</div>
+    </div>
+  </div>
+);
+<Layout/>
+```
+
+export const Spreadsheet = ({children, color}) => {
+  return (<table>
+    {[1,2,3,4].map(e => <tr>{[1,2,3,4].map(e=><td>{e}</td>)}</tr> )}
+  </table>)
+}
+
+export const Layout = ({children, color}) => {
+  const [isSpreadsheet, setIsSpreadsheet] = React.useState(false)
+  return (<div className="flex border-solid border-2">
+    <div>menu</div>
+    <div>
+      {!isSpreadsheet && <div>arkusz <button onClick={() => setIsSpreadsheet(true)}>zastąp arkuszem</button></div>}
+      {isSpreadsheet && <div><Spreadsheet/></div>}
+      <div>szczegóły*<br/><br/><small>* okienko pojawi się dopiero po zaznaczeniu wiersza</small></div>
+    </div>
+  </div>);
+}
+
+<Layout/>
+
+```jsx title="src/components/HelloDocusaurus.js"
+function HelloDocusaurus() {
+  return <h1>Hello, Docusaurus!</h1>;
+}
+```
+
+:::tip Wskazówka
+
+`className` to nic innego, jak `class`, ale w notacji [JSX](https://www.freecodecamp.org/news/jsx-in-react-introduction/)
+
+:::
+
+:::tip Wskazówka
+
+className=`flex` reprezentuje ten sam efekt, co `style={{display: 'flex'}}`, więcej w dokumentacji [tailwind](https://tailwindcss.com/docs/flex)
+
+:::
+
+# Materiał video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9hTKQ1qU34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
