@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkoz_oai=self.webpackChunkoz_oai||[]).push([[807],{7922:a=>{a.exports=JSON.parse('{"label":"organizacja","permalink":"/blog/tags/organizacja","allTagsPath":"/blog/tags","count":1}')}}]);

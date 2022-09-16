@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkoz_oai=self.webpackChunkoz_oai||[]).push([[5397],{1980:a=>{a.exports=JSON.parse('{"label":"mentorzy","permalink":"/hackarthon/en/blog/tags/mentorzy","allTagsPath":"/hackarthon/en/blog/tags","count":1}')}}]);

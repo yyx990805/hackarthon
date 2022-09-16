@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkoz_oai=self.webpackChunkoz_oai||[]).push([[2822],{1839:a=>{a.exports=JSON.parse('{"label":"openzacheta","permalink":"/blog/tags/openzacheta","allTagsPath":"/blog/tags","count":2}')}}]);
