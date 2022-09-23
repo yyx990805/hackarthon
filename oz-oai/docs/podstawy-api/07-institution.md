@@ -28,4 +28,8 @@ export const Layout = ({children, color}) => {
   </div>);
 }
 
-<Layout/>
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => <Layout/>}
+</BrowserOnly>

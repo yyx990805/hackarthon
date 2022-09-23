@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Lista wystaw
 
-export const Layout = ({children, color}) => {
+export const Layout = ({children, color, window}) => {
   const [url, setUrl] = React.useState('https://apihackaton.zacheta.art.pl/api/v1/exhibition')
-  const [token, setToken] = React.useState(() => localStorage.getItem('token'))
+  const [token, setToken] = React.useState(() => window?.localStorage.getItem('token'))
   const [data, setData] = React.useState()
   return (<div className="flex border-solid border-2">
     <div>
@@ -14,7 +14,7 @@ export const Layout = ({children, color}) => {
         <input value={url} onChange={ev => setUrl(ev.target.value)}/>
         <br/>
         <input value={token} onChange={ev => {
-          localStorage.setItem('token', ev.target.value)
+          window?.localStorage.setItem('token', ev.target.value)
           setToken(ev.target.value)
         }} placeholder="Token"/>
         <br/>
@@ -28,6 +28,10 @@ export const Layout = ({children, color}) => {
   </div>);
 }
 
-<Layout/>
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+  {() => <Layout/>}
+</BrowserOnly>
 
 ## Filtrowanie

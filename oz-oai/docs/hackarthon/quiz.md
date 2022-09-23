@@ -32,7 +32,10 @@ export const Pytanie = ({children}) => {
   </div>;
 }
 
-<Form>
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+{() => <Form>
 <Init/>
 
 <Pytanie>
@@ -120,7 +123,8 @@ export const Pytanie = ({children}) => {
   <Odp>Krzysztof Wodiczko</Odp>
 </Pytanie>
 
-</Form>
+</Form>}
+</BrowserOnly>
 
 <!-- ```
 curl --request GET \

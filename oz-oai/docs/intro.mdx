@@ -21,16 +21,15 @@ sidebar_position: 0
 
 Sprawdź swoją wiedzę
 
-export const Init = ({children}) => {window.i=1; return <></>}
+export const Init = ({children, window}) => {window.i=1; return <></>}
 
-export const Odp = ({children}) => <label><input type="radio" name={`pyt${window.i}`}/>{children}</label>;
+export const Odp = ({children}) => <label><input type="radio" name={`pyt${window?.i}`}/>{children}</label>;
 
 export const Form = ({children}) => (<form action="https://zochniak.pl/oaiz/save.exe" method="POST"
   onSubmit={ev => {
     if(0) ev.preventDefault();
     const form = ev.target || ev.target.closest('form')
     if(0) fetch(form.action, {method: 'POST'}).then(r => {
-      debugger;
     })
     form.querySelector('.resp').innerHTML = 'Gratulacje, wygrałeś/-aś?';
   }}
@@ -47,6 +46,10 @@ export const Pytanie = ({children}) => {
   </div>;
 }
 
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
 <Form>
 <Init/>
 
@@ -60,6 +63,7 @@ export const Pytanie = ({children}) => {
 <a href="/hackarthon/docs/hackarthon/quiz">Więcej pytań w sekcji Quiz</a>
 
 </Form>
+</BrowserOnly>
 
 ```
 curl --request GET \
