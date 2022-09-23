@@ -1,0 +1,84 @@
+---
+sidebar_position: 0
+---
+
+# Wprowadzenie do API zachęty
+
+* [REST API](https://www.freecodecamp.org/news/rest-api-tutorial-rest-client-rest-service-and-api-calls-explained-with-code-examples/)
+* zgodne z OpenAPI Spec v3 (Swagger)
+* zgodne z JSONApi
+* dostepne kolekcje z przykładowymi użyciami
+
+## Endpointy
+
+* /api/v1/artworks - eksponaty
+* /api/v1/multimedia - pliki
+* /api/v1/artists - artyści
+* /api/v1/exhibitions - wystawy
+* /api/v1/literature
+
+## Quiz
+
+Sprawdź swoją wiedzę
+
+export const Init = ({children}) => {window.i=1; return <></>}
+
+export const Odp = ({children}) => <label><input type="radio" name={`pyt${window?.i}`}/>{children}</label>;
+
+export const Form = ({children}) => (<form action="https://zochniak.pl/oaiz/save.php" method="POST"
+  onSubmit={ev => {
+    if(0) ev.preventDefault();
+    const form = ev.target || ev.target.closest('form')
+    if(0) fetch(form.action, {method: 'POST'}).then(r => {
+    })
+    form.querySelector('.resp').innerHTML = 'Gratulacje, wygrałeś/-aś?';
+  }}
+  >
+  {children}
+  <div class='resp'></div>
+  <button type="submit">Wyślij</button>
+</form>);
+
+export const Pytanie = ({children}) => {
+  // i+=1;
+  return <div style={{marginTop: '30px', display: 'flex', flexDirection: 'column'}}>
+    Pytanie {window.i++}. {children}
+  </div>;
+}
+
+
+import BrowserOnly from '@docusaurus/BrowserOnly';
+
+<BrowserOnly>
+{() => <Form>
+<Init/>
+
+<Pytanie>
+<b>Zbiorów jakiego obiketu dotyczy Hackathon</b>
+<Odp>Zachęta Narodowa Galeria Sztuki</Odp>
+<Odp>Wikipedia</Odp>
+<Odp>British Museum</Odp>
+</Pytanie>
+
+<a href="/hackarthon/docs/hackarthon/quiz">Więcej pytań w sekcji Quiz</a>
+
+</Form>}
+</BrowserOnly>
+
+```
+curl --request GET \
+  --url 'https://apihackaton.zacheta.art.pl/api/v1/artists/23' \
+  --header 'Accept: application/vnd.api+json' \
+  --header 'Authorization: Bearer {{token}}}}' \
+  --header 'Host: apihackathon.zacheta.art.pl'
+```
+
+# [Inwentaryzacja](./przykladowe-zastosowania/01-inwentaryzacja.mdx)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d9hTKQ1qU34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# [Mapa wydarzeń](./przykladowe-zastosowania/02-mapa%20wydarzen.mdx)
+
+<video src="videos/map.mp4"/>
+
+<video src="videos/virtualgallery.mp4"/>

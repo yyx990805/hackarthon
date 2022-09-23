@@ -15,10 +15,6 @@ export const Layout = ({children, color}) => {
       <div>
         <ol>
           <li>Wydarzenie 1</li>
-          <li>Wydarzenie 2</li>
-          <li>Wydarzenie 3</li>
-          <li>Wydarzenie 4</li>
-          <li>Wydarzenie 5</li>
         </ol>
       </div>
     </div>
@@ -30,9 +26,10 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="3d" label="3D" default>
+    <img src="/hackarthon/wiz3d.png"/>
     <iframe src="/hackarthon/wiz3d.html" width="100%" height="900"/>
   </TabItem>
-  <TabItem value="draft" label="layout draft">
+  <TabItem value="draft" label="Szkic ułożenia">
     <Layout/>
   </TabItem>
 </Tabs>
