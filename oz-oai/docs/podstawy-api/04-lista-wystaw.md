@@ -2,31 +2,10 @@
 sidebar_position: 1
 ---
 
-# Lista eksponatów
-
-```sh
-export token='abcdeadbeef' # api pozyskane z konta
-curl --request GET \
-  --url https://apihackaton.zacheta.art.pl/api/v1/artworks \
-  --header 'Authorization: Bearer '$token''
-```
-
-```js
-const options = {
-  method: 'GET',
-  headers: {
-    Authorization: `Bearer ${token}`
-  }
-};
-
-fetch('https://apihackaton.zacheta.art.pl/api/v1/artworks', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
-```
+# Lista wystaw
 
 export const Layout = ({children, color}) => {
-  const [url, setUrl] = React.useState('https://apihackaton.zacheta.art.pl/api/v1/artworks')
+  const [url, setUrl] = React.useState('https://apihackaton.zacheta.art.pl/api/v1/exhibition')
   const [token, setToken] = React.useState(() => localStorage.getItem('token'))
   const [data, setData] = React.useState()
   return (<div className="flex border-solid border-2">
@@ -50,3 +29,5 @@ export const Layout = ({children, color}) => {
 }
 
 <Layout/>
+
+## Filtrowanie

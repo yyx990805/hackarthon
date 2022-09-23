@@ -14,7 +14,7 @@ Niezbędne zasoby
 
 * [MoSCoW - must-have or should-have, could-have or won\'t-have (wishes)](https://docs.google.com/document/d/1ut392VJllwiy2O3S8Y4PabuarJwo-ac8AONmufrXwPg/edit)
 * [O zasobach z kolekcji Zachety (ABOUT_RESOURCES)](https://docs.google.com/document/d/1Z2GCUnWMAg960x5Px6laLIziCFVR_5_flnOr0yUaJcw/edi)
-* [Ścieżki tematyczne (wybrane zasoby, gdrive)](https://drive.google.com/drive/folders/1Lo6LKiaG3CNC6P44Vcmc78RTum_Em6k)
+* [Ścieżki tematyczne (wybrane zasoby, gdrive)](https://drive.google.com/drive/folders/1Lo6LKiaG3CNC6P44Vcmc78RTum_Em6kN)
 * [Materiały dla uczestników (google-drive)](https://drive.google.com/drive/folders/1qjI6F6EbD_BWWXGGhfkcl5Bi_-SDJw08)
 * [Wytyczne WCAG](https://wcag.lepszyweb.pl/)
 * [Kryteria punktacji](https://docs.google.com/document/d/1Vg-h1JUzN4EydLFmGD0hVeKigqUKlqgV9SfL9DfrGq4/edit)
