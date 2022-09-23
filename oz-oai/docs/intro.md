@@ -6,22 +6,21 @@ sidebar_position: 1
 
 * [REST API](https://www.freecodecamp.org/news/rest-api-tutorial-rest-client-rest-service-and-api-calls-explained-with-code-examples/)
 * zgodne z OpenAPI Spec v3 (Swagger)
+* zgodne z JSONApi
 * dostepne kolekcje z przykładowymi użyciami
-* zgodne z
 
 ## Endpointy
 
-* /api/objects - eksponaty
-* /api/multimedia
-* /api/events
+* /api/v1/artworks - eksponaty
+* /api/v1/multimedia
+* /api/v1/events
 
-## Skrót użyć
 
-# [Inwentaryzacja](./przyk%C5%82adowe-zastosowania/01-inwentaryzacja.mdx)
+# [Inwentaryzacja](./przykladowe-zastosowania/01-inwentaryzacja.mdx)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d9hTKQ1qU34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# [Mapa wydarzeń](./przyk%C5%82adowe-zastosowania/02-mapa%20wydarze%C5%84.mdx)
+# [Mapa wydarzeń](./przykladowe-zastosowania/02-mapa%20wydarzen.mdx)
 
 <video src="videos/map.mp4"/>
 

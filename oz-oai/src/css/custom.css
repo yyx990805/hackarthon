@@ -4,15 +4,43 @@
  * work well for content-centric websites.
  */
 
+ :root {
+--ifm-color-primary-light: #7A7C81;
+--ifm-color-primary-lighter: #C4C5C9;
+--unnamed-color-2b7ee2: #2B7EE2;
+--unnamed-color-56575d: #56575D;
+/* --ifm-color-primary-light: #F4F4F7; */
+/* --ifm-color-primary-lighter: #EAEAED; */
+--ifm-color-primary-lightest: #D1D2D9;
+--unnamed-color-24c070: #24C070;
+--unnamed-color-00aef0: #00AEF0;
+--unnamed-color-e5af0d: #E5AF0D;
+--unnamed-color-f85058: #F85058;
+--unnamed-color-ffffff: #FFFFFF;
+--unnamed-color-770df6: #770DF6;
+--ifm-color-primary: #56575C;
+--unnamed-color-efeff2: #EFEFF2;
+--ifm-color-primary-dark: #1E1E21;
+--ifm-color-primary-darker: #595959;
+--ifm-color-primary-darkest: #000000;
+/* --ifm-color-primary-darkest: #770DF6; */
+--unnamed-color-57595c: #57595C;
+
+--ifm-navbar-link-hover-color: #1E1E21;
+--ifm-color-emphasis-300: #56575D;
+--ifm-menu-color-active: #811bff88;
+--ifm-navbar-link-hover-color: #2B7EE2;
+ }
+
+.hero--primary {
+  /* background-image: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px); */
+  background-image:
+    repeating-linear-gradient(90deg, #1E1E21, transparent 55px, #EFEFF2 46px, white 56px 25px);
+    /* linear-gradient(.25turn, #F85058 10%, blue) */
+}
+
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }

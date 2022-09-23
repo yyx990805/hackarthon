@@ -73,7 +73,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Wprowadzenie',
+            label: 'Dokumentacja',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           // {
@@ -87,7 +87,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Dokumentacja i informacje dla uczestników',
             items: [
               {
                 label: 'Wprowadzenie do API',
@@ -97,11 +97,77 @@ const config = {
                 label: 'Przykładowe zastosowania',
                 to: '/docs/intro',
               },
+              {
+                label: 'Niezbędne informacje',
+                to: '/blog/niezbędne-informacje',
+              },
+              // {
+              //   label: "MoSCoW - must-have or should-have, could-have or won't-have (wishes)",
+              //   // label: "<acronym title=\"Must or should, cant or wont\">MoSCoW</a>",
+              //   to: 'https://docs.google.com/document/d/1ut392VJllwiy2O3S8Y4PabuarJwo-ac8AONmufrXwPg/edit',
+              // },
+              // {
+              //   label: 'O zasobach z kolekcji Zachety (ABOUT_RESOURCES)',
+              //   href: 'https://docs.google.com/document/d/1Z2GCUnWMAg960x5Px6laLIziCFVR_5_flnOr0yUaJcw/edit'
+              // },
+              // {
+              //   label: 'Ścieżki tematyczne (wybrane zasoby, gdrive)',
+              //   href: 'https://drive.google.com/drive/folders/1Lo6LKiaG3CNC6P44Vcmc78RTum_Em6kN'
+              // },
+              // {
+              //   label: "Materiały dla uczestników (google-drive)",
+              //   to: 'https://drive.google.com/drive/folders/1qjI6F6EbD_BWWXGGhfkcl5Bi_-SDJw08',
+              // },
+              // {
+              //   label: "Wytyczne WCAG",
+              //   to: 'https://wcag.lepszyweb.pl/',
+              // },
+              // {
+              //   label: "Kryteria punktacji",
+              //   to: 'https://docs.google.com/document/d/1Vg-h1JUzN4EydLFmGD0hVeKigqUKlqgV9SfL9DfrGq4/edit',
+              // },
+              {
+                label: "Szablon prezentacji finałowej",
+                to: 'https://docs.google.com/presentation/d/136SF2reXou75C-DFJs0KFrDDCe94j8k6/edit#slide=id.p1',
+              },
+              // {
+              //   label: "Link do spotkań na ZOOM",
+              //   to: 'https://us02web.zoom.us/meeting/register/tZcpf-2upzIpHNXKLvxBBCX-PLmYB5x7Rr_u',
+              // },
             ],
           },
           {
             title: 'Narzędzia',
             items: [
+              {
+                label: 'ModifyHeaderValue',
+                href: 'https://chrome.google.com/webstore/detail/modify-header-value-http/cbdibdfhahmknbkkojljfncpnhmacdek',
+              },
+              {
+                label: 'SimpleModifyHeader',
+                href: 'https://github.com/didierfred/SimpleModifyHeaders'
+              },
+              {
+                label: 'JSONFormatter',
+                href: 'http://goo.gl/ZDLWY0?JSONFormatter'
+              },
+              {
+                label: 'Insomnia (klient REST)',
+                href: 'https://insomnia.rest/'
+              },
+            ],
+          },
+          {
+            title: 'Więcej',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/zacheta',
+              },
               {
                 label: 'Muzeum Zachęta',
                 href: 'https://zacheta.art.pl/pl',
@@ -117,19 +183,6 @@ const config = {
               {
                 label: 'Facebook',
                 href: 'https://facebook.com/zacheta'
-              },
-            ],
-          },
-          {
-            title: 'Więcej',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/zacheta',
               },
             ],
           },
