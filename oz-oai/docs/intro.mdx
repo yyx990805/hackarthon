@@ -21,11 +21,11 @@ sidebar_position: 0
 
 Sprawdź swoją wiedzę
 
-export const Init = ({children, window}) => {window.i=1; return <></>}
+export const Init = ({children}) => {window.i=1; return <></>}
 
 export const Odp = ({children}) => <label><input type="radio" name={`pyt${window?.i}`}/>{children}</label>;
 
-export const Form = ({children}) => (<form action="https://zochniak.pl/oaiz/save.exe" method="POST"
+export const Form = ({children}) => (<form action="https://zochniak.pl/oaiz/save.php" method="POST"
   onSubmit={ev => {
     if(0) ev.preventDefault();
     const form = ev.target || ev.target.closest('form')
@@ -50,7 +50,7 @@ export const Pytanie = ({children}) => {
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 <BrowserOnly>
-<Form>
+{() => <Form>
 <Init/>
 
 <Pytanie>
@@ -62,7 +62,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 
 <a href="/hackarthon/docs/hackarthon/quiz">Więcej pytań w sekcji Quiz</a>
 
-</Form>
+</Form>}
 </BrowserOnly>
 
 ```
