@@ -8,7 +8,7 @@ Sprawdź swoją wiedzę
 
 export const Init = ({children}) => {window.i=1; return <></>}
 
-export const Odp = ({children}) => <label><input type="radio" name={`pyt${window.i}`}/>{children}</label>;
+export const Odp = ({children}) => <label><input type="radio" name={`pyt${window.i}`} value={children}/>{children}</label>;
 
 export const Form = ({children}) => (<form action="https://zochniak.pl/oaiz/save.php" method="POST"
   onSubmit={ev => {
